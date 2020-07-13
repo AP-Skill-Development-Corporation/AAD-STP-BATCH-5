@@ -1,0 +1,82 @@
+Whats the Android?
+History of android
+What is the architecture of Android?
+How to do installation of android studio
+Create a sample android studio project
+
+Whats the Android?
+"Android is Platform which is having mobile oparating System based on linux kernal"
+History of android?
+In the 2003 :Android Inc Started 
+1.Andy rubin
+2.Rich minar
+3.Chris white
+4.Nic Sears
+
+For Digital Camera OS ...
+In 2005 comany went into deep losses
+in 2005 -target was diverted to develop an OS for Mobiles
+In 2005 Google Aqvired Android
+
+======
+2008 The first Android OS Released in the market
+HTC   :HTC dream
+
+1.0
+1.1
+Google Released the Android OS names
+Cupcake,donut,eclar,froyo,gingger bread,Honey Comb,...
+Android 10..
+
+What is the architecture of Android(MVVM)?
+MVVM(Model View ViewModel)
+Total 5 Layers:
+
+1.System Apps and User Apps
+2.Java API Framework
+3.Runtime and Native lib..
+4.HAL(Hardware Abstration Layer)
+5.Linux kernal
+
+1.System Apps and User Apps:
+	No speical stutus example for system apps are Calls,messages,Camera,clock,calculator....etc
+	user app:user installed from playstore 
+	Ex:hike,pubg,whtsup,...etc
+2.Java API Framework
+	Full form of API Is Application Programming Interface 
+	Java API Framework will provide the Interface between app and android OS
+3.Runtime and Native lib..
+	provide the accessing the permisstion 
+	Ex:Internet connection
+4.HAL:It will be provide the interfae between hardware components and software componets 
+	Ex:Camera ...
+5.Linux kernal:
+	Manage the all resources :
+		memory,power..etc
+
+
+============App basic building Blocks=========
+Four types of the App building Blocks
+1.Resources:Images,Strings,Colors,Styles,layouts..etc
+2.App components:Four types:
+	1.Activity
+	2.service
+	3.BroadCast Recivers
+	4.Content Provider
+
+3.Manifest:Provide entire app information and also it will be handle the runtime permisstions
+4.Build Configurtaion:Enire App Development and Configations will this section 
+
+=================
+2.App components:Four types:
+	1.Activity:A signle Screen with contains user interation/user interface componets 
+		For Ex:Single screen with some buttions,textviews,images,..etc
+	2.service:A service is a long background running task or process with out interaton 
+		Ex:Playing Music,getting notification form whtsup..etc
+	3.BroadCast Recivers:
+		In registered for systemwide annousements 
+		Ex:Power connecte,power Disconnected..etc
+	4.Content Provider:
+		In  we have security feature ..
+		It is brigde between the sharing the data be two apps 
+		Ex:Contacts data,Gallary ,audio file this data access to other apps

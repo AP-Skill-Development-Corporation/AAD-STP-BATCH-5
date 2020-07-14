@@ -1,3 +1,158 @@
+
+
+
+Welcome to APSSDC Android Application Development 
+			Workshop (Day-5)
+
+===============Follow the Instructions========
+Mute your mic
+open the google slides 
+
+==============================
+Today's Objective:
+=================
+Intents:
+-------------
+An Activity is single screen :
+Ex:any app screen 
+
+Intent:
+An intent is Class .Intention to move the one to Activity to another
+Types:
+2 types:
+Explicit Intetent:Same application screen
+Ex:shopping app shopping and add a cart 
+Systax of Explicit intent:
+
+//this -->context or MainActivity.java
+Intent intent_obj=new Intent(this,Secondactivity.class);
+startActivity(intent_obj);
+
+App 1     App 2
+2 screens  4 screens 
+scn 1 scn2   sc1 sc2 sc3 sc4 
+
+Implicit Intent:
+It start other app screen 
+Example:www.google.com 
+
+Syntax:
+
+Uri uri=new Uri("https:www."+dataurl+".com")
+Intent obj=new Intent(action,uri)
+startActivity(obj)	
+======================================
+
+
+
+
+
+		Good Morining To All
+=====Welcome Day-6 Android Workshop========
+
+All of you open the yesterday project i.e., MyIntents
+
+		session will start by 10:00 Am
+
+		Today's Objective:
+		1.data passing to one to another
+		2.Activity Lifycles
+		3.option menus and User inputcontrols 
+
+
+
+--->Welcome Day -10 Android Workshop <----
+		Good Morning
+
+		1.Material design
+			Button design
+			edittext
+			textviews 
+			...etc 
+		2.Navigation Components 
+
+
+
+
+
+
+========Notification=========
+Notification is service ..
+
+Build the Notification:
+3 Components:
+--------
+1.Notification Icon--<smallicon
+2.Notification messagse--<massge
+3.Notification Titile--<setcontentTitile
+
+2----Class
+Notification Manager
+NotificationCompact.Builder 
+
+
+
+Intent i=new Intent(this,MainActivity.Class)
+4->context,req code,intent_obj,Flg
+PendingIntent pi=PendingIntent.getActivity(this,12456142,i,PendingIntent.FLAG_UPDATE_CURRNET)
+Builder.setContent(pi)
+------------------------------------------
+
+
+---Today's Objective-----------------------------------------
+============
+DataBinding-->
+Data Storage 
+two ways:
+1.Internal Storage:
+	Ex:calc,Alram,messaging...etc
+	SQLITE DB,Shared prefarences,Mysqlite...etc
+2.External Storage:
+	Ex:ondrive,googledrive,youtube,social media apps..etc..
+	All serverside,000webhost,firebase,aws...etc
+
+	=========Shared prefarences========
+	Here Data Will present in form of KEY and VALUE pairs
+	Very Small amount of data will store 
+	Here data Override
+	----------Implimentation----------
+	1.SharePrefarence -->
+		Inisilization-->
+		SharePrefarence sp=getSharedPrefarene("muni",MODE_PRIVATE);
+	2.SharePrefarence.Editor edit=sp.Edit()
+	3.edit.putString("key","Mueniah")
+	4.getdata-->
+
+
+	=========Data DataBinding=========
+
+	2022130687
+	24/09/2004
+	3-349
+	7702091471
+
+
+
+
+App Components?
+
+
+
+
+
+
+
+
+
+
+
+10:05 Am will start the session
+please mute your mic
+
+name-rollnumber-clg name
+
+
+
 Whats the Android?
 History of android
 What is the architecture of Android?
@@ -72,11 +227,68 @@ Four types of the App building Blocks
 	1.Activity:A signle Screen with contains user interation/user interface componets 
 		For Ex:Single screen with some buttions,textviews,images,..etc
 	2.service:A service is a long background running task or process with out interaton 
-		Ex:Playing Music,getting notification form whtsup..etc
+	Ex:Playing Music,getting notification form whtsup..etc
 	3.BroadCast Recivers:
-		In registered for systemwide annousements 
-		Ex:Power connecte,power Disconnected..etc
+	In registered for systemwide annousements 
+	Ex:Power connecte,power Disconnected..etc
 	4.Content Provider:
-		In  we have security feature ..
+	In  we have security feature ..
 		It is brigde between the sharing the data be two apps 
 		Ex:Contacts data,Gallary ,audio file this data access to other apps
+========Day-2==========
+About Android Studio File Stracure..
+	It is software or IDE 
+	For using develop an Android Software Application
+
+
+====creating a new android studio project ======
+Hello World
+
+whatsup app-->com.whtsup.com
+muniwhtsup -->com.muniwhtsup.com
+
+Android parts;
+1.project Files
+	app:
+		Manifest:app entire information will be available,
+				also runtime permisstions
+		java:java class will shows ,coding will do here
+		res(resources):
+			drawable:for storing the external or internal image file as well as some drawable resources files have to design
+			layout:for design our main screens 
+			mipmap:it will support the 9patch images.
+			values: @string/clg_name
+					@color/yellow
+					@style/blod
+
+			we are plaing for Build an app about college
+				faculty screen:clg name (blu color)
+				ao screen:clg name (blu color)
+				students screen:clg name (blu color)
+				mangement screen:clg name (blu color)
+
+				..clg name (blu color)
+				..clg name (blu color)
+				...10(clg name (blu color))
+
+	gradle script:For adding extra lib..
+
+Full form of APK:
+Android Application Package
+
+
+2.Layout Editor:For deign main screens
+3.android studio panes:options are avilable and run app
+4.Logcat:when debuggind we will  check for logging 
+
+
+phichical Device connection 
+	 Settings > System>Touch About phone>
+	 Build Number (7 times tap)>back for devloper options
+	 >enable usb deugging,install via usb >main home screen >popup window (always option)>open androi studio
+
+
+View and ViewGroup
+
+
+

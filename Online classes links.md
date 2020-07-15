@@ -1,18 +1,3 @@
-
-# Android Application Development - Syllabus
-### Introduction : 
-Mobile Apps are becoming popular day by day. Today, Everyone owns a smartphone and they do a lot of things with the help of their smartphones such as making payments, ordering groceries, playing games, chatting with friends and colleagues etc .There is huge demand in the market to develop android apps. It’s Google’s CEO Sundar Pichai's initiative to train 2 Million people to become android developers as this platform has a huge need of developers.
-In view of this scenario and keeping industry needs in mind, APSSDC is offering “Android Application Development - FDP” so that the faculty across engineering colleges in the state of Andhra Pradesh gain App Development knowledge and share the same to their students. 
-
-### Hardware Requirements:
-i3 or above Processor is required
-8 GB RAM is recommended
-Good Internet Connectivity
-Microphone and Speakers facility for Offline training program.
-### Duration :
-36 Hours (2 hours each day X 18 days)
-
-
 ## Workshop Syllabus :
 
        1. Introduction to Mobile App Development
@@ -23,7 +8,10 @@ Microphone and Speakers facility for Offline training program.
             a. Installation of Android Studio
             b. Installation of Android emulator
             c. Connecting the physical device with the IDE
+            
+        [Click here for class video Day-1](https://transcripts.gotomeeting.com/#/s/e11ec7e18bf1e80ec788eb08f49139b723a87e2fd9901114a78478a3c25049e9)
        6. Creating the first application 
+        [Click here for class video Day-1](https://transcripts.gotomeeting.com/#/s/e11ec7e18bf1e80ec788eb08f49139b723a87e2fd9901114a78478a3c25049e9)
        7. Hello World
        8. Creating a User Interactable App
        9. Hello Toast

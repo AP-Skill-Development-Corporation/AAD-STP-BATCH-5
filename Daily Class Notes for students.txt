@@ -134,3 +134,38 @@ phichical Device connection
 
 
 View and ViewGroup
+
+
+==========================================
+
+			Day-3
+Today’s Objective:
+	What is View and viewgroup
+		UI(User Interface)
+	Views are Closed by self closing tags or inner closing  tags
+		ex:<View />
+	viewGroups are closed by external cloning tags or outer cloning tags
+		Ex:<ViewGroup ></ViewGroup>
+	Measurement :
+		2types 
+		Static
+			Match_parent:It will match entire screen(either with or height )
+			Wrap_content :Only part of 
+		Dynamic:
+			300dp,400dp,(Dp Means Device Independent Pixel) for all components /view and view groups 
+			For textviews:20sp,30sp,500sp…(Sp means Scale independent Pixel ) for only textviews 
+Layouts:This are the ViewGrops 
+	ex:Linear layout,Relative layout,ConstarinLayou..etc
+
+Create our own android application  :
+	Hello Toast App Creation
+
+	Buttion(Toast)
+
+	Textview(Display Count)
+
+	Buttion(Count)
+
+
+
+	

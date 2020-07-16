@@ -7,6 +7,7 @@
     muni:weightSum="10"
     tools:context=".MainActivity">
 
+
     <Button
         muni:layout_width="match_parent"
         muni:layout_height="0dp"
@@ -34,7 +35,6 @@
         muni:text="Count"
         muni:onClick="increaseCount"
         />
-
 
 </LinearLayout>
 

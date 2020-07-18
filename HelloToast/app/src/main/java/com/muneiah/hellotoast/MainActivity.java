@@ -20,8 +20,8 @@ public static final String KEY="muneiah";
         //here we need to inisilize or connect a xml componts id's through findViewById()
         tv=findViewById(R.id.mytextview);
         if (savedInstanceState!=null && savedInstanceState.containsKey(KEY)){
-            int data=savedInstanceState.getInt(KEY);
-            tv.setText(String.valueOf(data));
+           count =savedInstanceState.getInt(KEY);
+            tv.setText(String.valueOf(count));
         }
 
     }

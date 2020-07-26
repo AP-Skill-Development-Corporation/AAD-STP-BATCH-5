@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ribeye_marrow"
+        android:text="Shapes And Border"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="30sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#E91E63"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button-1"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shapeone"
+        android:textColor="#FFFFFF"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button-2"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shapetwo"
+        android:textColor="#FF5722"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button-3"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shapethree"
+        android:textColor="#3F51B5"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button-4"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shapefour"
+        android:textColor="#3F51B5"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Name"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shapetwo"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Password"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shapefour"
+        android:textColorHint="#DD1506"
+        android:textAlignment="center"
+        android:drawableLeft="@android:drawable/ic_lock_lock"
+        android:drawableRight="@android:drawable/ic_lock_power_off"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Material Design"
+            android:onClick="materialdesign"
+            android:drawableRight="@android:drawable/ic_lock_power_off"/>
+
+
+
+
+</LinearLayout>

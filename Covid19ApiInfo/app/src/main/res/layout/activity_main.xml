@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="India Carona Updates"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Date"
+        android:textColor="#000"
+        android:textSize="30sp"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Country"
+        android:textColor="#03A9F4"
+        android:textSize="30sp"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_confirmed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Confirmed"
+        android:textColor="#E83F09"
+        android:textSize="30sp"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_deaths"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Deaths"
+        android:textColor="#E91E63"
+        android:textSize="30sp"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_recovered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="recovered"
+        android:textColor="#03EF0D"
+        android:textSize="30sp"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_active"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Active"
+        android:textColor="#F61606"
+        android:textSize="30sp"
+
+        />
+</LinearLayout>

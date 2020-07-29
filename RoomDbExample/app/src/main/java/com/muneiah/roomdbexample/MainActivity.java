@@ -27,9 +27,9 @@ StudentAdaper adaper;
         et_stu_number=findViewById(R.id.student_rollnumber);
         et_stuName=findViewById(R.id.student_name);
         rec=findViewById(R.id.recycler);
-        database=Room.databaseBuilder(this,StudentDatabase.class,"studentsdb")
+        /*database=Room.databaseBuilder(this,StudentDatabase.class,"studentsdb")
                 .allowMainThreadQueries()
-                .build();
+                .build();*/ //for normal room db
 }
 
     public void saveData(View view)

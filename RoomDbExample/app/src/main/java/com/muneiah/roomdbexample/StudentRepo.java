@@ -41,5 +41,18 @@ public class StudentRepo {
             return null;
         }
     }
+    public void insert(Student_Entity entity){
+         new MyAysncTaskInsert().execute(entity);
+    }
+    public void update(Student_Entity entity){
+        new MyAysncTaskUpdate().execute(entity);
+    }
+    public void delete(Student_Entity entity){
+        new MyAysncTaskDelete().execute(entity);
+    }
+    //For Retrive
+    public LiveData<List<Student_Entity>> liveData(){
+        return listLiveData;
+    }
 
 }

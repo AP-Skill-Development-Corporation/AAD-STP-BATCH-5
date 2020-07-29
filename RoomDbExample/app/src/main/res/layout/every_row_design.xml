@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
 
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_edit_black_24dp"
+        android:textSize="40sp" />
 
     <TextView
         android:id="@+id/tv_sName"
@@ -14,11 +21,19 @@
         android:textSize="40sp" />
 
     <TextView
+        android:id="@+id/tv_srollnumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=" Roll num"
-        android:id="@+id/tv_srollnumber"
-        android:textSize="40sp"
         android:layout_margin="3dp"
-        android:textColor="@color/colorPrimary"/>
+        android:text=" Roll num"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:drawableLeft="@drawable/ic_delete_black_24dp"
+        android:textSize="40sp" />
 </LinearLayout>

@@ -52,7 +52,8 @@ static MyViewModel viewModel;
         studentEntity=new Student_Entity();
         studentEntity.setName(myname);
         studentEntity.setRollnumber(myrollnumber);
-        database.studentDAO().insert(studentEntity);
+       // database.studentDAO().insert(studentEntity);
+        viewModel.insert(studentEntity);
         Toast.makeText(this, "success", Toast.LENGTH_SHORT).show();
 
     }

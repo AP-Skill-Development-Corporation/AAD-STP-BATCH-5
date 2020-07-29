@@ -1,6 +1,9 @@
 package com.muneiah.roomdbexample;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.room.Room;
@@ -19,6 +22,7 @@ static StudentDatabase database;
 Student_Entity studentEntity;
 List<Student_Entity> studentEntityList;
 StudentAdaper adaper;
+static MyViewModel viewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +34,15 @@ StudentAdaper adaper;
         /*database=Room.databaseBuilder(this,StudentDatabase.class,"studentsdb")
                 .allowMainThreadQueries()
                 .build();*/ //for normal room db
+        viewModel= ViewModelProviders.of(this).get(MyViewModel.class);
+        viewModel.liveData().observe(this, new Observer<List<Student_Entity>>() {
+            @Override
+            public void onChanged(List<Student_Entity> student_entities) {
+                adaper=new StudentAdaper(MainActivity.this,student_entities);
+                rec.setLayoutManager(new LinearLayoutManager(MainActivity.this));
+                rec.setAdapter(adaper);
+            }
+        });
 }
 
     public void saveData(View view)
@@ -43,11 +56,11 @@ StudentAdaper adaper;
         Toast.makeText(this, "success", Toast.LENGTH_SHORT).show();
 
     }
-
-    public void retriveData(View view) {
+/*normal db */
+    /*public void retriveData(View view) {
         studentEntityList=database.studentDAO().retrive();
         adaper=new StudentAdaper(this,studentEntityList);
         rec.setLayoutManager(new LinearLayoutManager(this));
         rec.setAdapter(adaper);
-    }
+    }*/
 }

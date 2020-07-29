@@ -28,12 +28,12 @@ tools:context=".MainActivity">
     android:onClick="saveData"
     android:text="Save" />
 
-<Button
+<!--<Button
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
     android:onClick="retriveData"
-    android:text="Retrive" />
+    android:text="Retrive" />-->
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"

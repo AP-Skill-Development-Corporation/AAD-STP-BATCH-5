@@ -32,7 +32,8 @@ Student_Entity studentEntity;
         studentEntity=new Student_Entity();
         studentEntity.setName(myUpdatename);
         studentEntity.setRollnumber(myUpdaterollnum);
-        MainActivity.database.studentDAO().update(studentEntity);
+       // MainActivity.database.studentDAO().update(studentEntity);//normal data update
+        MainActivity.viewModel.update(studentEntity);//for live data update
         Toast.makeText(this, "updated"+myUpdatename, Toast.LENGTH_SHORT).show();
     Intent intent=new Intent(this,MainActivity.class);
     startActivity(intent);

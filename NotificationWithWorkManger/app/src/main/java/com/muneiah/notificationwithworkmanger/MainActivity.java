@@ -2,6 +2,8 @@ package com.muneiah.notificationwithworkmanger;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
+import androidx.work.OneTimeWorkRequest;
+import androidx.work.WorkManager;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -14,21 +16,25 @@ import android.os.Bundle;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
-NotificationManager nm;
+/*NotificationManager nm;
 PendingIntent pi;
-Intent i;
-public static final String CHANNEL_ID="muneiah.tellakula.apssdc";
+Intent i;*/
+//public static final String CHANNEL_ID="muneiah.tellakula.apssdc";
+OneTimeWorkRequest one;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        i=new Intent(this,MainActivity.class);
+        one=new OneTimeWorkRequest.Builder(FirstClass.class).build();
+       /* i=new Intent(this,MainActivity.class);
         pi=PendingIntent.getActivity(this,123,i,PendingIntent.FLAG_UPDATE_CURRENT);
         nm= (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-        createChannel();
+      */
+        //  createChannel();
     }
 
-    private void createChannel() {
+   /* private void createChannel() {
         if (Build.VERSION.SDK_INT>= Build.VERSION_CODES.O){
             NotificationChannel nc=new NotificationChannel(CHANNEL_ID,"muni",NotificationManager.IMPORTANCE_HIGH);
             nc.setLightColor(Color.BLUE);
@@ -37,15 +43,16 @@ public static final String CHANNEL_ID="muneiah.tellakula.apssdc";
 
         }
     }
-
+*/
     public void showMyNotification(View view) {
-        NotificationCompat.Builder builder=new NotificationCompat.Builder(this,CHANNEL_ID);
+        WorkManager.getInstance(this).enqueue(one);
+       /* NotificationCompat.Builder builder=new NotificationCompat.Builder(this,CHANNEL_ID);
         builder.setContentTitle("This is My Notification");
         builder.setContentText("This is my own notification this property belogs to me..");
         builder.setSmallIcon(R.drawable.ic_notifications_black_24dp);
         builder.setDefaults(Notification.DEFAULT_ALL);
         builder.setContentIntent(pi);
-        nm.notify(12345,builder.build());
+        nm.notify(12345,builder.build());*/
 
 
     }

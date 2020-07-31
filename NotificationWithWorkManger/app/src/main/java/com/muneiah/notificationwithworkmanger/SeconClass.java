@@ -8,34 +8,32 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
-import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.core.app.NotificationCompat;
+import androidx.work.ListenableWorker;
 import androidx.work.Worker;
 import androidx.work.WorkerParameters;
 
-//import static com.muneiah.notificationwithworkmanger.MainActivity.CHANNEL_ID;
-
-public class FirstClass extends Worker {
+public class SeconClass extends Worker {
     NotificationManager nm;
     PendingIntent pi;
     Intent i;
     public static final String CHANNEL_ID="muneiah.tellakula.apssdc";
 
-    public FirstClass(@NonNull Context context, @NonNull WorkerParameters workerParams) {
+    public SeconClass(@NonNull Context context, @NonNull WorkerParameters workerParams) {
         super(context, workerParams);
     }
 
     @NonNull
     @Override
-    public Result doWork() {
+    public ListenableWorker.Result doWork() {
         nm = (NotificationManager) getApplicationContext().getSystemService(Context.NOTIFICATION_SERVICE);
         i = new Intent(getApplicationContext(), MainActivity.class);
         pi = PendingIntent.getActivity(getApplicationContext(), 87687, i, PendingIntent.FLAG_UPDATE_CURRENT);
         createChannel();
         showMyNotification();
-        return Result.success();
+        return ListenableWorker.Result.success();
     }
 
     private void createChannel() {

@@ -3,6 +3,7 @@ package com.muneiah.notificationwithworkmanger;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 import androidx.work.OneTimeWorkRequest;
+import androidx.work.PeriodicWorkRequest;
 import androidx.work.WorkManager;
 
 import android.app.Notification;
@@ -15,18 +16,22 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 
+import java.util.concurrent.TimeUnit;
+
 public class MainActivity extends AppCompatActivity {
 /*NotificationManager nm;
 PendingIntent pi;
 Intent i;*/
 //public static final String CHANNEL_ID="muneiah.tellakula.apssdc";
 OneTimeWorkRequest one;
+PeriodicWorkRequest repeatedwork;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         one=new OneTimeWorkRequest.Builder(FirstClass.class).build();
+      repeatedwork=new PeriodicWorkRequest.Builder(SeconClass.class,3, TimeUnit.MINUTES).build();
        /* i=new Intent(this,MainActivity.class);
         pi=PendingIntent.getActivity(this,123,i,PendingIntent.FLAG_UPDATE_CURRENT);
         nm= (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
@@ -46,7 +51,8 @@ OneTimeWorkRequest one;
 */
     public void showMyNotification(View view) {
         WorkManager.getInstance(this).enqueue(one);
-       /* NotificationCompat.Builder builder=new NotificationCompat.Builder(this,CHANNEL_ID);
+        WorkManager.getInstance(this).enqueue(repeatedwork);
+        /* NotificationCompat.Builder builder=new NotificationCompat.Builder(this,CHANNEL_ID);
         builder.setContentTitle("This is My Notification");
         builder.setContentText("This is my own notification this property belogs to me..");
         builder.setSmallIcon(R.drawable.ic_notifications_black_24dp);
